@@ -1,0 +1,248 @@
+html, body
+{
+    padding: 0%;
+    margin: 0% auto;
+}
+
+body
+{
+    background-color: lightgray;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#navbar
+{
+    margin: 0%;
+    padding: 0%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    font-size: larger;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navbar ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar li
+{
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+#navbar  li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar  li a:hover:not(.active)
+{
+    background-color: #111;
+}
+
+#navbar  li a.active
+{
+    color: black;
+    background-color: deepskyblue   ;
+}
+
+.spaceFiller
+{
+    height: 50px;
+}
+
+#headPhoto
+{
+    padding: 1%;
+}
+
+#headPhoto img
+{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.sectionWrapper
+{
+    margin: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-flow: row wrap;
+    background-color: deepskyblue;
+}
+
+.header
+{
+    padding: 2%;
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.featureWrapper
+{
+    margin: 3%;
+    border: 1px solid #BFBFBF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    background-color: white;
+    width: 100%;
+}
+
+.featureImg
+{
+    margin: 3%;
+    width: 40%;
+}
+
+.featureImg img
+{
+    width: 100%;
+}
+
+.featureText
+{
+    margin: 3%;
+    padding: 3%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    width: 40%;
+    text-align: justify;
+}
+
+.featureText div
+{
+    width: 100%;
+    font-size: large;
+    text-align: justify;
+}
+
+.featureText h1
+{
+    color: grey;
+    vertical-align: middle;
+    font-size: xx-large;
+}
+
+.featureText span
+{
+    font-size: larger;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.card
+{
+    padding: 1%;
+    margin: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+    background-color: white;
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 20px;
+}
+
+.card:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.circleImg
+{
+    border-radius: 50%;
+}
+  
+.container
+{
+    padding: 2px 16px;
+}
+
+#specifications table
+{
+    background-color: white;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#specifications table td
+{
+    border: 1px solid deepskyblue;
+    padding: 8px;
+    width: 50%;
+}
+.specificationField
+{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.specificationValue
+{
+    font-size: large;
+}
+
+.button {
+    float: right;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+    color: deepskyblue;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 3%; 
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.contact
+{
+    text-align: center;
+    cursor: pointer;
+}
